@@ -10,45 +10,50 @@ This is a detailed program about the course, separated in weeks
 
 * Ruby introduction.
 * Rbenv/Ruby Installer and Git setup.
-* Introduction to the basic Ruby types & solving problems with Ruby.
+* Introduction to the basic Ruby types, syntax & language structures.
+* Solving problems with Ruby.
 
 ### Week 2
 
 * In depth look of Array, Hash, String, Symbol, Numeric.
-* Ruby blocks.
-* Enumerable and all it's magic.
+* Introducing Ruby blocks.
+* Working with Enumerable and all it's magic.
 
 ### Week 3
 
 * OOP Introduction. Classes, Modules and Constants.
+* Freedom patching. Opening classes & adding functionality.
 * Method resolution lookup and ancestor chain.
-* Custom enumerable objects.
+* Implementing our own Enumerable objects.
 
 ### Week 4
 
-* Lambda vs Proc semantics.
-* Binding.
-* Exceptions.
+* Keyword arguments & parallel assingments.
+* Second take on Ruby OOP model
+* Sending messages arround and responding to them. Working with method aliases.
+* Understanding Duck Typing & SOLID principles.
+* Solving OOP problems
 
 ### Week 5
 
-* Kernel & Module functions.
-* require vs load.
-* Advanced Enumerable & Enumerator
-* Working with regular expressions
+* Enumerators in Ruby.
+* Lambda vs Proc semantics.
+* * require vs load.
+* Working IO in Ruby. Dealing with Files.
+* Dealing with exceptions.
 
 ### Week 6
+
+* Kernel & Module methods.
+* Constants & Scope
+* Making namespaces in Ruby
+
+### Week 7
 
 * Singleton classes.
 * Dynamic method definition.
 * Don't be evil: class_eval and instance_eval.
 * Constants, instance variables API.
-
-### Week 7
-
-* Freedom patching.
-* Refinements.
-* Keyword arguments.
 
 ### Week 8
 
