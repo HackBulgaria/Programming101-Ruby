@@ -34,3 +34,15 @@ If you happen to be running on Windows, you have two options:
 
 1. Install some Linux distribution. [Ubuntu is good for beginners](http://www.ubuntu.com/)
 2. Use [ruby installer for Windows](http://rubyinstaller.org/). And after this, switch to Linux.
+
+## Installing Linux
+
+Before moving on and installing any Linux, **PLEASE BACKUP EVERYTHING THAT IS IMPORTANT TO YOU**.
+
+Don't leave memories only on the hard drive of your PC / laptop. It will eventually fail and you will eventually lose everything that is not backed up.
+
+Our suggestion is, use one or more of the following:
+
+* [pcloud](https://www.pcloud.com/)
+* [DropBox(https://www.dropbox.com/)
+* Other similar cloud services
