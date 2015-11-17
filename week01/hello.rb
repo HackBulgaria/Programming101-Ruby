@@ -59,8 +59,8 @@ end
 hello_ruby
 example_with_numbers
 example_reading_arguments
-puts sum([1, 2, 3, 4])
+puts sum [1, 2, 3, 4]
 
 books = ruby_books
 
-puts "Matz book is: #{books["Matz"]}" if books.key? 'Matz'
+puts "Matz book is: #{books['Matz']}" if books.key? 'Matz'
