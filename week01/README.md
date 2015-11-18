@@ -8,6 +8,7 @@ We are going to solve a lot of problems using it & making progress one step at a
 
 * [The first lecture is located here](https://ruby.hackbulgaria.com/lectures/01#/)
 * The first problem that you are going to face is to run the [hello.rb](hello.rb) file and examine the structures in it. This will give you clues for how to solve your problems.
+* [To get a good idea of **if, elsif, else and unless structures**, read here](http://www.tutorialspoint.com/ruby/ruby_if_else.htm)
 * [If you wonder what kind of loop you can use, take a loot at that reference](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
 * [As you will see both double and single quotes, check this for the difference](http://stackoverflow.com/questions/6395288/double-vs-single-quotes)
 
