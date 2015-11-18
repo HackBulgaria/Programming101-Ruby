@@ -6,6 +6,13 @@ We are going to solve a lot of problems using it & making progress one step at a
 
 ## Getting to know Ruby
 
+Here are materials, **related to motivation & philoshopy of Ruby:**
+
+* [Interview with Yukihiro Matsumoto called The Philosophy of Ruby](http://www.artima.com/intv/ruby.html)
+* [Keynote: Jim Weirich - Why aren't you using Ruby? (RubyConf Uruguay 2013)](https://www.youtube.com/watch?v=0D3KfnbTdWw)
+
+Here are materials, **related to the syntax & language constructs:**
+
 * [The first lecture is located here](https://ruby.hackbulgaria.com/lectures/01#/)
 * The first problem that you are going to face is to run the [hello.rb](hello.rb) file and examine the structures in it. This will give you clues for how to solve your problems.
 * [To get a good idea of **if, elsif, else and unless structures**, read here](http://www.tutorialspoint.com/ruby/ruby_if_else.htm)
