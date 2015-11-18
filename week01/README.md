@@ -52,7 +52,7 @@ if color == "red"
 elsif color == "yellow"
   puts "Prepare yourself"
 elsif color == "green"
-  puts "Go Go Go!
+  puts "Go Go Go!"
 else
   puts "I don't know this color"
 end
