@@ -175,3 +175,47 @@ Implemenent the following functions:
 * `is_anagram(a, b)` - returns true, if the string `a` is an anagram of `b`
 * `has_anagramOf(a, b)` - returns true, if an anagram of string `a` can be found in `b`
 
+## Is number balanced?
+
+A number is called balanced, if we take the middle of it and the sums of the left and right parts are equal.
+
+For example, the number `1238033` is balanced, because it's left part is `123` and right part is `033`.
+
+We have : `1 + 2 + 3 = 0 + 3 + 3 = 6`.
+
+A number with only one digit is always balanced!
+
+Implement the function `is_number_balanced(n)` that checks if `n` is balanced.
+
+**Few examples:**
+
+```ruby
+is_number_balanced(9) == True
+is_number_balanced(11) == True
+is_number_balanced(13) == False
+is_number_balanced(121) == True
+is_number_balanced(4518) == True
+is_number_balanced(28471) == False
+is_number_balanced(1238033) == True
+```
+
+## Zero Insertion
+
+Given an integer, implement the function `zero_insert(n)`, which returns a new integer, constructed by the following algorithm:
+
+* If two neighboring digits are the same (like `55`), insert a 0 between them (`505`)
+* Also, if we add two neighboring digits and take their module by 10 (`% 10`) and the result is 0 - add 0 between them.
+
+For example, if we have the number `116457`, result will be: `10160457`:
+
+* 1 and 1 are the same, so we insert 0 between them
+* `6 + 4 % 10 = 0`, so we insert 0 between them.
+
+**Few examples:**
+
+```ruby
+zero_insert(116457) == 10160457
+zero_insert(55555555) == 505050505050505
+zero_insert(1) == 1
+zero_insert(6446) == 6040406
+```
