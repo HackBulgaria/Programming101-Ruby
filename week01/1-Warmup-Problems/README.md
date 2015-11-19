@@ -28,9 +28,9 @@ L(n) = L(n-1) + L(n-2)
 
 Those are classic problems for using module division:
 
-* Given an integer `n`, return the number of digits in `n` -> `countDigits(n)`
+* Given an integer `n`, return the number of digits in `n` -> `count_digits(n)`
 * Given an integer `n`, return the sum of all digits in `n` -> `sumDigits(n)`
-* `factorialDigits(n)` -> for example, if we have `145`, we need to calculate `1! + 4! + 5!`
+* `factorial_digits(n)` -> for example, if we have `145`, we need to calculate `1! + 4! + 5!`
 
 ## Fibonacci number
 
