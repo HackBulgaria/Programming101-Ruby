@@ -144,7 +144,7 @@ For example, `1234321` is an integer palindrome.
 Implement the following functions:
 
 * Check if given integer `n` is palindrome -> `is_int_palindrome(n)`
-* Largets palindrome, smaller than given `N` -> `largest_palindrome(n)`
+* Largets palindrome, smaller than given `n` -> `largest_palindrome(n)`
 
 ## Prime numbers
 
