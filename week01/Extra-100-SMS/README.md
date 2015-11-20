@@ -31,7 +31,7 @@ numbers_to_message([2, -1, 2, 2, -1, 2, 2, 2]) = "abc"
 numbers_to_message([2, 2, 2, 2]) = "a"
 numbers_to_message([1, 4, 4, 4, 8, 8, 8, 6, 6, 6, 0, 3, 3, 0, 1, 7, 7, 7, 7, 7, 2, 6, 6, 3, 2])
 =
-"Ivo e panda"
+"Ivo e Panda"
 ```
 
 ## `message_to_numbers(messsage)`
@@ -45,6 +45,6 @@ message_to_numbers("abc") = [2, -1, 2, 2, -1, 2, 2, 2]
 message_to_numbers("a") = [2]
 message_to_numbers("Ivo e panda")
 =
-[1, 4, 4, 4, 8, 8, 6, 6, 0, 3, 3, 0, 1, 7, 2, 6, 6, 3, 2]
+[1, 4, 4, 4, 8, 8, 8, 6, 6, 6, 0, 3, 3, 0, 1, 7, 2, 6, 6, 3, 2]
 message_to_numbers("aabbcc") = [2, -1, 2, -1, 2, 2, -1, 2, 2, -1, 2, 2, 2, -1, 2, 2, 2]
 ```
