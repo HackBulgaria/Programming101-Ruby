@@ -168,3 +168,29 @@ We can see that if we drop the bomb at `(1, 1)` or `(2, 1)`, we will do the most
 
 We are going to represent one point as a list of two elements.
 
+## Group Function
+
+We are going to implement a very helpful function, called `group`.
+
+`group` takes a list of things and returns a list of group, where each group is formed by all equal consecutive elements in the list.
+
+**For example:**
+
+```ruby
+group([1, 1, 1, 2, 3, 1, 1]) == [[1, 1, 1], [2], [3], [1, 1]]
+group([1, 2, 1, 2, 3, 3]) == [[1], [2], [1], [2], [3, 3]]
+```
+
+## Longest subsequence of equal consecutive elements
+
+Implement the function `max_consecutive(items)`, which takes a list of things and returns an integer - the count of elements in the longest subsequence of equal consecutive elements.
+
+For example, in the list `[1, 2, 3, 3, 3, 3, 4, 3, 3]`, the result is 4, where the longest subsequence is formed by `3, 3, 3, 3`
+
+**Test examples::**
+
+```ruby
+max_consecutive([1, 2, 3, 3, 3, 3, 4, 3, 3]) == 4
+max_consecutive([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5]) == 3
+```
+
