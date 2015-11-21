@@ -7,6 +7,13 @@ In order to be prepared for the course & start solving problems from day 1, you 
 * If you have knowledge in other languages, you can read [Ruby From Other Languages section](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/)
 * [Try Ruby!](http://tryruby.org/) - This is an interactive tutorial to get you started with the basic language constructs. Get a feel of Ruby before the first excercise in HackBulgaria!
 
+## Quick Start With Some Programming Concepts
+
+* [What is a function in more mathematical terms by Khan Academy](https://www.khanacademy.org/math/algebra/algebra-functions/evaluating-functions/v/what-is-a-function)
+* [A more formal understanding of functions by Khan Academy](https://www.khanacademy.org/math/linear-algebra/matrix_transformations/linear-transformations/v/a-more-formal-understanding-of-functions)
+* [What is a function parameter?](https://en.wikipedia.org/wiki/Parameter_(computer_programming))
+* [Algorithms and Asymptotic Notation by Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
+
 ## Install Ruby
 
 Our recommended setting for installing Ruby is to use rbenv + ruby-build:
