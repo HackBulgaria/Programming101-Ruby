@@ -16,7 +16,7 @@ Here is an example:
 
 ```ruby
 >> plane = InfinitePlane.new 0, 0
->> plane.move_to_directions '>v<>>>v^~><><~><><'
+>> plane.move_to_directions '>>><<<~>>>~^^^'
 >> puts plane.to_array
 [-3, -3]
 ```
