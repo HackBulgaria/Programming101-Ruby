@@ -58,6 +58,11 @@ class Vector2D
     # Your code goes here.
   end
 
+  def dot(other)
+    # Return the dot product of the two vectors
+    # https://en.wikipedia.org/wiki/Dot_product#Algebraic_definition
+  end
+
   def to_s
     # Your code goes here.
   end
@@ -108,23 +113,28 @@ class Vector
   end
 
   def +(vector_of_same_dimension_or_scalar)
-    # Return a new Vector2D that represents the result
+    # Return a new Vector that represents the result
     # Your code goes here.
   end
 
   def -(vector_of_same_dimension_or_scalar)
-    # Return a new Vector2D that represents the result
+    # Return a new Vector that represents the result
     # Your code goes here.
   end
 
   def *(scalar)
-    # Return a new Vector2D that represents the result
+    # Return a new Vector that represents the result
     # Your code goes here.
   end
 
   def /(scalar)
-    # Return a new Vector2D that represents the result
+    # Return a new Vector that represents the result
     # Your code goes here.
+  end
+
+  def dot(vector_of_same_dimension_or_scalar)
+    # Return the dot product of the two vectors
+    # https://en.wikipedia.org/wiki/Dot_product#Algebraic_definition
   end
 
   def to_s
