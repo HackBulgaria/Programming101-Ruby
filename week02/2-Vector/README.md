@@ -39,18 +39,22 @@ class Vector2D
   end
 
   def +(other)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
   def -(other)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
   def *(scalar)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
   def /(scalar)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
@@ -104,18 +108,22 @@ class Vector
   end
 
   def +(vector_of_same_dimension_or_scalar)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
   def -(vector_of_same_dimension_or_scalar)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
   def *(scalar)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
   def /(scalar)
+    # Return a new Vector2D that represents the result
     # Your code goes here.
   end
 
