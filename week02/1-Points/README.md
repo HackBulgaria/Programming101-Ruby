@@ -2,6 +2,8 @@
 
 Implement a class in Ruby, called `InfinitePlane` which is going to simulate a 2D coordinate system.
 
+![](http://centurion2.com/XNA/GameProgrammingBasics/GPB100/GPB110/Game2DCoordinateSystem.PNG)
+
 The class should take x and y position of a point in that plane:
 
 ```ruby
