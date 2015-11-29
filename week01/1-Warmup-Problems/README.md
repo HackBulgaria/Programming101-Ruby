@@ -1,5 +1,10 @@
 # Warmup Ruby Problems
 
+You can find solutions here:
+
+* In [procedural_solutions.rb](procedural_solutions.rb) are our first attempts at writing Ruby. Almost everything is written with `while` and `if`
+* In [good_solutions.rb](good_solutions.rb) we do a rekate on everything with our knowledge of `Enumerable`
+
 In a file called `warmup.rb`, solve the following problems:
 
 ## Factorial
