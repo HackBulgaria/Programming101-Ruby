@@ -29,7 +29,7 @@ L(n) = L(n-1) + L(n-2)
 Those are classic problems for using module division:
 
 * Given an integer `n`, return the number of digits in `n` -> `count_digits(n)`
-* Given an integer `n`, return the sum of all digits in `n` -> `sumDigits(n)`
+* Given an integer `n`, return the sum of all digits in `n` -> `sum_digits(n)`
 * `factorial_digits(n)` -> for example, if we have `145`, we need to calculate `1! + 4! + 5!`
 
 ## Fibonacci number
@@ -58,19 +58,19 @@ Example of hack numbers:
 
 Implement the following functions:
 
-* `is_hack(n)` -> checks if `n` is a hack number
+* `hack?(n)` -> checks if `n` is a hack number
 * `next_hack(n)` -> returns the next hack number, that is bigger than `n`
 
 Few examples:
 
 ```ruby
-is_hack 1 == true
+hack? 1 == true
 next_hack 0 == 1
 
-is_hack 21 == true
+hack? 21 == true
 next_hack 10 == 21
 
-is_hack 8191 == true
+hack? 8191 == true
 next_hack 8031 == 8191
 ```
 
