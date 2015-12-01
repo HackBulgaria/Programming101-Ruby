@@ -3,3 +3,5 @@
 Here are the needed materials:
 
 * [What is `&block` and `yield` in Ruby?](http://stackoverflow.com/questions/814739/whats-this-block-in-ruby-and-how-does-it-get-passed-in-a-method-here)
+* [Understanding Ruby blocks, procs & lambdas](http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/)
+* [Guide to Ruby collections - Enumerable & Enumerator](http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/)
