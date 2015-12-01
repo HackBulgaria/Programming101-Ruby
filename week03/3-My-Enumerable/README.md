@@ -10,6 +10,32 @@ and again, and again... You get the idea :)
 
 * <http://www.ruby-doc.org/core-2.1.3/Enumerable.html>
 
+## Testing
+
+There are tests which you can use in order to check if your code is OK.
+
+In order to run the tests, you will have to take all files from this directory (without `README.md`).
+
+When you have all files, frist, you need to install the desired gems:
+
+```
+$ bundle install
+```
+
+If you do not have bundler, install it:
+
+```
+$ gem install bundler
+```
+
+And when you have everything ready, in order to run the tests, type the following command:
+
+```
+$ bundle exec rake
+```
+
+You will see which tests pass and which don't
+
 ## My Enumerable
 
 Implement a module called `MyEnumerable` which implements a similar module to
