@@ -1,7 +1,12 @@
 # Implementation of our own Enumerable class
 module MyEnumerable
   def map
-    # Your code goes here
+    Array.new.tap do |arr|
+      each do |element|
+        value = yield element
+        arr << value
+      end
+    end
   end
 
   def filter
