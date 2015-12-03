@@ -10,23 +10,61 @@ module MyEnumerable
   end
 
   def filter
-    # Your code goes here
+    Array.new.tap do |arr|
+      each do |element|
+        arr << element if (yield element)
+      end
+    end
   end
 
-  def reject
-    # Your code goes here
+  def first
+    element = nil
+
+    each do |x|
+      element = x
+      break
+    end
+
+    element
   end
 
   def reduce(initial = nil)
-    # Your code goes here
+    skip_first = false
+
+    if initial.nil?
+      initial = first
+      skip_first = true
+    end
+
+    each do |x|
+      if skip_first
+        skip_first = false
+        next
+      end
+      initial = yield initial, x
+    end
+
+    initial
   end
 
-  def any?
-    # Your code goes here
+  def negate_block(&block)
+    Proc.new { |x| !block.call(x) }
   end
 
-  def all?
-    # Your code goes here
+  def reject(&block)
+    filter(negate_block(&block))
+  end
+
+  def size
+    map { |x| 1 }.reduce(0) { |acc, x| acc + x }
+  end
+
+  def any?(&block)
+    filter(&block).size > 0
+  end
+
+  def all?(&block)
+    filter(&block).size == size
   end
 
   def include?(element)
@@ -34,12 +72,13 @@ module MyEnumerable
   end
 
   def count(element = nil)
-    # Your code goes here
+    if element.nil?
+      return size
+    end
+
+    filter { |x| x == element }.size
   end
 
-  def size
-    # Your code goes here
-  end
 
   def min
     # Your code goes here.
@@ -73,3 +112,24 @@ module MyEnumerable
     # Your code goes here.
   end
 end
+
+class Collection
+  include MyEnumerable
+
+  def initialize(*data)
+    @data = data
+  end
+
+  def each(&block)
+    @data.each(&block)
+  end
+
+  def ==(otherCollection)
+    @data == otherCollection.data
+  end
+
+  def get(index)
+    return @data[index]
+  end
+end
+
