@@ -81,7 +81,7 @@ def count_vowels(str)
 
   str.downcase
      .chars
-     .filter { |ch| vowels.include? ch }
+     .select { |ch| vowels.include? ch }
      .length
 end
 
@@ -90,7 +90,7 @@ def count_consonants(str)
 
   str.downcase
      .chars
-     .filter { |ch| consonants.include? ch }
+     .select { |ch| consonants.include? ch }
      .length
 end
 
