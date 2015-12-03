@@ -101,7 +101,7 @@ class SolutionTest < Minitest::Test
 
   def test_max_by
     collection = Collection.new(*['apples', 'oranges', 'horse', 'ruby'])
-    assert_equal 'oranges', collection.min_by { |x| x.length }
+    assert_equal 'oranges', collection.max_by { |x| x.length }
   end
 
   def test_take_in_standard_case
