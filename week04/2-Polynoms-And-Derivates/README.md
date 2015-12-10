@@ -82,6 +82,24 @@ The derivative of f(x) = x^4 + 10*x^3 is:
 f'(x) = 4*x^3 + 30*x^2
 ```
 
+Few things to keep in mind:
+
+```
+$ ruby solution.rb '1+x^2'
+The derivative of f(x) = x^2 + 1 is:
+f'(x) = 2x
+```
+
+And
+
+```
+$ ruby solution.rb '2x^2 + x^2'
+The derivative of f(x) = 3x^2 is:
+f'(x) = 6x
+```
+
+Don't bother checking if the polynomial is correct for it's variable. It's always going to be the same ( for example `x`)
+
 ## Hints
 
 Take your input via `ARGV[0]`. Thing about the different part of your program.
