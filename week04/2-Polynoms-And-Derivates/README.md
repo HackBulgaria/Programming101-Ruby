@@ -80,3 +80,12 @@ f'(x) = 0
 $ ruby x^4+10x^3
 The derivative of f(x) = x^4 + 10*x^3 is:
 f'(x) = 4*x^3 + 30*x^2
+```
+
+## Hints
+
+Take your input via `ARGV[0]`. Thing about the different part of your program.
+
+Implemented it in such a way that you are not dependant only on console input / output.
+
+**Write tests in order to validate your code.**
