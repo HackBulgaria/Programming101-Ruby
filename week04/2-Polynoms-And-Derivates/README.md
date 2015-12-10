@@ -29,7 +29,7 @@ Here is the general rule for taking derivative of a function in the following fo
 
 ```
 f(x) = c * x^n
-f'(x) = n * x * x^(n - 1)
+f'(x) = n * c * x^(n - 1)
 ```
 
 Where `c` and `n` are positive integers and `f'(x)` denotes the derivative of `f(x)`
@@ -65,19 +65,19 @@ Using your OO knowledge, implement a program that takes a string, representing a
 Few examples:
 
 ```
-$ ruby '2x^3+x'
+$ ruby solution.rb '2x^3+x'
 Derivative of f(x) = 2*x^3 + x is:
 f'(x) = 6*x^2 + 1
 ```
 
 ```
-$ ruby '1'
+$ ruby solution.rb '1'
 The derivative of f(x) = 1 is:
 f'(x) = 0
 ```
 
 ```
-$ ruby 'x^4+10x^3'
+$ ruby solution.rb 'x^4+10x^3'
 The derivative of f(x) = x^4 + 10*x^3 is:
 f'(x) = 4*x^3 + 30*x^2
 ```
