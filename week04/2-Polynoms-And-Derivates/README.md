@@ -65,19 +65,19 @@ Using your OO knowledge, implement a program that takes a string, representing a
 Few examples:
 
 ```
-$ ruby 2x^3+x
+$ ruby '2x^3+x'
 Derivative of f(x) = 2*x^3 + x is:
 f'(x) = 6*x^2 + 1
 ```
 
 ```
-$ ruby 1
+$ ruby '1'
 The derivative of f(x) = 1 is:
 f'(x) = 0
 ```
 
 ```
-$ ruby x^4+10x^3
+$ ruby 'x^4+10x^3'
 The derivative of f(x) = x^4 + 10*x^3 is:
 f'(x) = 4*x^3 + 30*x^2
 ```
