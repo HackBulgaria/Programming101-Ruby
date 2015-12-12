@@ -4,7 +4,7 @@ class Symbol
       p self
       p object
       p args
-      object.send(self, *args)
+      object.public_send(self, *args)
     end
   end
 end
