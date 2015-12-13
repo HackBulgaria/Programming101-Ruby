@@ -9,6 +9,7 @@
 * [What is `to_proc` and how does it work?](http://stackoverflow.com/questions/14881125/what-does-to-proc-method-mean)
 * [Ruby's class heirarchy](http://rubylearning.com/images/class.png)
 * [Why does Ruby have both private and protected methods?](http://stackoverflow.com/questions/3534449/why-does-ruby-have-both-private-and-protected-methods)
+* [What Is the Difference Between a Block, a Proc, and a Lambda in Ruby?](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/)
 
 ## Code Examples
 
