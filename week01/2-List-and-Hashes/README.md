@@ -60,7 +60,7 @@ result[255] = 1
 
 ## Maximal Scalar Product
 
-Implement the following function: `maxScalarProduct(v1, v2)`.
+Implement the following function: `max_scalar_product(v1, v2)`.
 
 You are given two vectors - `v1` and `v2`
 
@@ -74,7 +74,7 @@ The scalar product is written as:
 v1 . v2 = a1 * b1 + a2 * b2 + ... + an * bn
 ```
 
-Find a permutation of `v1` and a permutation of `v2` for which their scalar product **is the largest possible**
+Find a permutation of `v1` and a permutation of `v2` for which their scalar product **is the largest possible** and **return that scalar product**
 
 ## Max Span
 
