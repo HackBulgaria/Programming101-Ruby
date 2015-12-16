@@ -8,7 +8,18 @@ class Monom
   end
 
   def self.parse(input)
-    # ...
+    parsed = MonomParser.new(input)
+
+    coeff = parsed.coeff
+    coeff = 0 unless coeff
+
+    var = parsed.var
+    var = 'x' unless var
+
+    power = parsed.power
+    power = 0 unless power
+
+    Monom.new coeff, var, power
   end
 
   def self.constant(x)
@@ -48,15 +59,67 @@ class Monom
     equal_var?(other) && equal_power?(other)
   end
 
+  def constant?
+    power == 0
+  end
+
   def derivate
     return Monom.constant(0) if constant?
     return Monom.constant(coeff) if power == 1
 
     Monom.new(coeff * power, var, power - 1)
   end
+end
 
-  def constant?
-    power == 0
+class Monom
+  class MonomParser
+    NUMERIC = /^[0-9]+$/
+    MULT = '*'
+
+    attr_reader :coeff, :var, :power
+
+    def initialize(input)
+      @input = input
+      try_take_coeff
+      try_take_var
+      try_take_power
+    end
+
+    private
+
+    def try_take_coeff
+      c = @input.chars.take_while { |ch| ch =~ NUMERIC }
+
+      if c == []
+        @coeff = 1
+        return
+      end
+
+      @coeff = c.join('').to_i
+    end
+
+    def try_take_var
+      input = @input.chars.drop_while { |ch| ch =~ NUMERIC }
+      input.shift if input.length > 0 && input[0] == MULT
+
+      if input.length == 0
+        @var = 'x'
+        @power = 0
+        return
+      end
+
+      @var = input[0]
+    end
+
+    def try_take_power
+      return if @power
+
+      input = @input.chars.reverse
+      power = input.take_while { |ch| ch =~ NUMERIC }
+
+      @power = 1 if power == []
+      @power = power.reverse.join('').to_i unless power == []
+    end
   end
 end
 
@@ -65,8 +128,6 @@ class Polynomial
     # power => monom
     @monoms = {}
 
-    # Polynomial.new(1, 2, 3)
-    # Polynomial.new([1, 2, 3])
     monoms = monoms.flatten
     monoms.each { |monom| self << monom }
   end
@@ -83,8 +144,8 @@ class Polynomial
     p
   end
 
-  def to_s
-    to_a.map(&:to_s).join(' + ')
+  def ==(other)
+    monoms == other.monoms
   end
 
   def <<(monom)
@@ -102,8 +163,19 @@ class Polynomial
       .map { |power| @monoms[power] }
   end
 
+  def to_s
+    monoms = to_a
+    # We take care if we have only 1 Monom (usually, zero)
+    return monoms[0].to_s if monoms.length == 1
+
+    monoms.select { |monom| monom.coeff != 0 }.map(&:to_s).join(' + ')
+  end
+
   def derivate
     Polynomial.new to_a.map(&:derivate)
-      .select { |monom| monom.coeff > 0 }
   end
+
+  protected
+
+  attr_reader :monoms
 end
