@@ -34,30 +34,51 @@ class WeekFolder
 end
 
 class Problem
-  attr_reader :path, :solutions
+  attr_reader :name, :path
 
   def initialize(path)
+    @name = File.basename(path)
     @path = path
+    @solutions = []
+
+    solutions = Dir.glob("#{@path}/*solution*")
+    @solutions = solutions unless solutions == []
+  end
+
+  def solutions
+    return "None" unless solution?
+    @solutions
   end
 
   def solution?
-    solutions = Dir.glob("#{@path}/*solution*")
-
-    @solutions = solutions unless solutions == []
-
-    solutions.length > 0
+    @solutions.length > 0
   end
 
   def to_s
-    @path
+    @name
   end
 end
 
+TABLE_HEADER = %(
+| Week | Problem | Solution |
+| ---- |:-------:| --------:|
+)
+
+table = TABLE_HEADER
 
 Weeks.list_weeks.each do |week|
-  puts "Looking at: #{week}"
-
   week.problems.each do |problem|
-    puts "    #{problem}: #{problem.solution?}"
+    solutions = problem.solutions
+
+    if solutions.respond_to?(:each)
+      solutions = solutions.map do |solution|
+        "[#{File.basename(solution)}](#{solution})"
+      end.join(', ')
+    end
+
+    row = "| #{week} | [#{problem}](#{problem.path}) | #{solutions} |\n"
+    table += row
   end
 end
+
+puts table
