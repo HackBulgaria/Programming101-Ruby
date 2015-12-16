@@ -65,7 +65,7 @@ Using your OO knowledge, implement a program that takes a string, representing a
 Few examples:
 
 ```
-$ ruby solution.rb '2x^3+x'
+$ ruby solution.rb '2*x^3+x'
 Derivative of f(x) = 2*x^3 + x is:
 f'(x) = 6*x^2 + 1
 ```
@@ -77,7 +77,7 @@ f'(x) = 0
 ```
 
 ```
-$ ruby solution.rb 'x^4+10x^3'
+$ ruby solution.rb 'x^4+10*x^3'
 The derivative of f(x) = x^4 + 10*x^3 is:
 f'(x) = 4*x^3 + 30*x^2
 ```
@@ -87,15 +87,15 @@ Few things to keep in mind:
 ```
 $ ruby solution.rb '1+x^2'
 The derivative of f(x) = x^2 + 1 is:
-f'(x) = 2x
+f'(x) = 2*x
 ```
 
 And
 
 ```
-$ ruby solution.rb '2x^2 + x^2'
-The derivative of f(x) = 3x^2 is:
-f'(x) = 6x
+$ ruby solution.rb '2*x^2 + x^2'
+The derivative of f(x) = 3*x^2 is:
+f'(x) = 6*x
 ```
 
 Don't bother checking if the polynomial is correct for it's variable. It's always going to be the same ( for example `x`)
