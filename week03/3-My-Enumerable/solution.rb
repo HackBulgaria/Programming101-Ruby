@@ -48,7 +48,7 @@ module MyEnumerable
   end
 
   def negate_block(&block)
-    Proc.new { |x| !block.call(x) }
+    proc { |x| !block.call(x) }
   end
 
   def reject(&block)
@@ -56,7 +56,7 @@ module MyEnumerable
   end
 
   def size
-    map { |x| 1 }.reduce(0) { |acc, x| acc + x }
+    map { |_| 1 }.reduce(0, &:+)
   end
 
   def any?(&block)
@@ -72,13 +72,10 @@ module MyEnumerable
   end
 
   def count(element = nil)
-    if element.nil?
-      return size
-    end
+    return size if element.nil?
 
     filter { |x| x == element }.size
   end
-
 
   def min
     # Your code goes here.
@@ -112,24 +109,3 @@ module MyEnumerable
     # Your code goes here.
   end
 end
-
-class Collection
-  include MyEnumerable
-
-  def initialize(*data)
-    @data = data
-  end
-
-  def each(&block)
-    @data.each(&block)
-  end
-
-  def ==(otherCollection)
-    @data == otherCollection.data
-  end
-
-  def get(index)
-    return @data[index]
-  end
-end
-

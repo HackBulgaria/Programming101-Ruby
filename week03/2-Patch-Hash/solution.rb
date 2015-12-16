@@ -1,10 +1,3 @@
-class Object
-  def tap
-    yield self
-    self
-  end
-end
-
 class Hash
   def pick3(*keys)
     Hash.new.tap do |h|
@@ -15,7 +8,7 @@ class Hash
   end
 
   def pick2(*keys)
-    select do |k, v|
+    select do |k, _|
       keys.include? k
     end
   end
@@ -31,9 +24,8 @@ class Hash
   end
 
   def except2(*keys)
-    reject { |k, v| keys.include? k }
+    reject { |k, _| keys.include? k }
   end
-
 
   def except(*keys)
     result = {}
@@ -46,10 +38,6 @@ class Hash
   end
 
   def compact_values
-    select { |key, value| value }
-  end
-
-  def defaults
-
+    select { |_, value| value }
   end
 end
