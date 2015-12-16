@@ -1,5 +1,5 @@
 class Symbol
-  def my_to_proc
+  def to_proc
     lambda do |object, *args|
       p self
       p object
