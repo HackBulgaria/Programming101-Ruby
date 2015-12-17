@@ -13,3 +13,9 @@ Holidays are coming, so we should be ready for this :)
 ## Tests
 
 Try to write tests for this problem. [You will find sample tests in the problem's folder here.](shopping_cart_test.rb)
+
+In order to run tests, you need to have `shopping_cart.rb` file in the same directory as the tests. Then run:
+
+```
+$ ruby shopping_cart_test.rb
+```
