@@ -2,6 +2,12 @@
 
 The repository for Programming 101 with Ruby.
 
+## Partners
+
+This course is happening, thanks to:
+
+[![](partners/coderunners.png)](https://code-runners.com/about)
+
 ## Problems & Solutions
 
 | Week | Problem | Solution |
