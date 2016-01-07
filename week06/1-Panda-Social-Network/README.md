@@ -46,9 +46,9 @@ ivo = Panda.new("Ivo", "ivo@pandamail.com", "male")
 rado = Panda.new("Rado", "rado@pandamail.com", "male")
 tony = Panda.new("Tony", "tony@pandamail.com", "female")
 
-network.add(ivo)
-network.add(rado)
-network.add(tony)
+network.add_panda(ivo)
+network.add_panda(rado)
+network.add_panda(tony)
 
 network.make_friends(ivo, rado)
 network.make_friends(rado, tony)
