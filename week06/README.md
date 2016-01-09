@@ -16,3 +16,10 @@ In order to have a nice flow, check the following materials:
 * [GitHub training videos](https://www.youtube.com/watch?v=8oRjP8yj2Wo&index=1&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH)
 * [A series of Atlasian Git tutorials](https://www.atlassian.com/git/)
 * [Git cheat sheet with the most popular commands](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+
+## Object equality
+
+We recommend the following materials on object equality in Ruby:
+
+* [What's the difference between equal?, eql?, ===, and ==](http://stackoverflow.com/questions/7156955/whats-the-difference-between-equal-eql-and)
+* [`alias` vs. `method_alias`](http://blog.bigbinary.com/2012/01/08/alias-vs-alias-method.html)
