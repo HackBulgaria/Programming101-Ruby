@@ -77,4 +77,4 @@ Implement a static method, that loads a social network from a saved file and ret
 
 Saved and loaded the file in your custom format? Great! Now let's take it up a level and make it so we can save and load social network instances in `json`, `yaml` and `xml` on top of the format we already have.
 
-Think about the interface of the `#save` and `#load` methods. Will it change? How can we keep the current interface? Should we `if/else` in `#save` or `#load` for the different formats? Is there a better way?
+Think about the interface of the `#save` and `#load` methods. Will it change? How can we keep the current interface? Should we `if/else` in `#save` or `#load` for the different formats? Is there a better way???
