@@ -1,6 +1,6 @@
 # Micro Blog
 
-Hi guys,
+Hi guys & girls,
 
 The time has come for you to make your first web application for the course.
 
