@@ -91,3 +91,5 @@ $ ruby client.rb search ruby
 Searching for blog posts with #ruby:
 ...
 ```
+
+**Try to solve that problem using the plain `net/http` library** - <http://docs.ruby-lang.org/en/2.3.0/Net/HTTP.html>
