@@ -6,6 +6,8 @@ The time has come for you to make your first web application for the course.
 
 For this task you will be using [Sinatra](http://www.sinatrarb.com/) to build a **microblogging application**
 
+**Note:** We do not want you to use any database! We want a pure Ruby solution that stores data in memory relying on arrays, hashes, sets and other structures.
+
 ## Routes
 
 Your application will have to provide the following interface:
@@ -43,6 +45,49 @@ Every sequence in a post that begins with `#` and continuous with a valid Ruby i
 
 `get '/search/ruby'` is the interface that we will use for searching for posts tagged with `#ruby`. Present them in the same fashion you present the posts on the index page.
 
-**Note:** We do not want you to use any database! We want a pure Ruby solution that stores data in memory relying on arrays, hashes, sets and other structures.
-
 GL & HF!
+
+## HTTP Client for communication
+
+Our microblog runs on a HTTP server. In order to create a new post, we need a `form` with `POST` method and action pointing to `/new`
+
+For diversity (and learning) reasons, we are going to create a simple console-based Ruby application, that will serve as a client to our microblog.
+
+Our client should read from some config / settings file where our blog is located as an URL.
+
+After this, we are looking for a similar interface:
+
+```
+$ ruby client.rb get all
+Displaying all blog posts:
+...
+```
+
+```
+$ ruby client.rb get 42
+Displaying blog post with id 42:
+...
+```
+
+```
+$ ruby client.rb get 43
+Blog post with id 43 not found.
+```
+
+```
+$ ruby client.rb delete 42
+Blog post with id 42 deleted.
+```
+
+```
+$ ruby client.rb create blog_post.txt
+Creating a new blog post with contents from blog_post.txt
+...
+Created with id 1337!
+```
+
+```
+$ ruby client.rb search ruby
+Searching for blog posts with #ruby:
+...
+```
