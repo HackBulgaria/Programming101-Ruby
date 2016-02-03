@@ -16,15 +16,6 @@ digits_to_number [1, 2, 3] == 123
 digits_to_number [8, 0, 8, 7] == 8087
 ```
 
-## Extreme elements in a list
-
-Implement the following functions that work on lists:
-
-* `min(items)` - returns the mininum element in items
-* `max(items)` - returns the maximum element in items
-* `nth_min(n, items)` - returns the nth minimum element in items
-* `nth_max(n, items)` - returns the nth maximum element in items
-
 ## Grayscale Image Histogram
 
 Implement a function called `grayslace_histogram(image)` that takes a matrix (list of lists) of an image and returns the histogram distribution of each pixel.
