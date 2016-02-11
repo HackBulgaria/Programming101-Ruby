@@ -142,22 +142,30 @@ p_score 48 == 3
 p_score 198 == 6
 ```
 
-## Integer palindomes
+## Object palindomes
 
-For example, `1234321` is an integer palindrome.
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. 
 
-Implement the following functions:
+Implement the following function: `palindrome?(obj)` that checks if the given obj is palindrome.
 
-* Check if given integer `n` is palindrome -> `is_int_palindrome(n)`
-* Largets palindrome, smaller than given `n` -> `largest_palindrome(n)`
+**Examples:**
+
+```ruby
+palindrome? 121 == true
+palindrome? 123 == false
+palindrome? 'kapak' == true
+palindrome? 'baba' == false
+palindrome? 'azobi4amma4iboza' == true
+```
+
 
 ## Prime numbers
 
 The usual deal. Implement the following functions:
 
-* Check if number is prime -> `is_prime(n)`
-* List the first `n` prime numbers -> `list_first_primes(n)`
-* List the first `n` prime numbers, using the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
+* Check if number is prime -> `prime?(n)`
+* List the first `n` prime numbers -> `first_primes(n)`
+* **OPTIONAL**: List the first `n` prime numbers, using the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
 
 ## Sum all numbers in a given string
 
@@ -177,8 +185,7 @@ Here is the explanation of what an Anagram is - <http://en.wikipedia.org/wiki/An
 
 Implemenent the following functions:
 
-* `is_anagram(a, b)` - returns true, if the string `a` is an anagram of `b`
-* `has_anagramOf(a, b)` - returns true, if an anagram of string `a` can be found in `b`
+* `anagrams?(a, b)` - returns true, if the string `a` is an anagram of `b`
 
 ## Is number balanced?
 
@@ -190,18 +197,18 @@ We have : `1 + 2 + 3 = 0 + 3 + 3 = 6`.
 
 A number with only one digit is always balanced!
 
-Implement the function `is_number_balanced(n)` that checks if `n` is balanced.
+Implement the function `balanced?(n)` that checks if `n` is balanced.
 
 **Few examples:**
 
 ```ruby
-is_number_balanced(9) == True
-is_number_balanced(11) == True
-is_number_balanced(13) == False
-is_number_balanced(121) == True
-is_number_balanced(4518) == True
-is_number_balanced(28471) == False
-is_number_balanced(1238033) == True
+balanced?(9) == True
+balanced?(11) == True
+balanced?(13) == False
+balanced?(121) == True
+balanced?(4518) == True
+balanced?(28471) == False
+balanced?(1238033) == True
 ```
 
 ## Zero Insertion

@@ -134,7 +134,7 @@ reduce_file_path("/../") == "/"
 
 ## Word from a^nb^n
 
-Implement a function, called `is_an_bn(word)` that checks if the given `word` is from the `a^nb^n for n>=0` language.
+Implement a function, called `an_bn?(word)` that checks if the given `word` is from the `a^nb^n for n>=0` language.
 Here, `a^n` means a to the power of n - __repeat the character "a" n times.__
 
 Lets see few words from this language:
@@ -150,18 +150,18 @@ The function should return true if the given `word` is from `a^nb^n for n>=0"` f
 **Test examples:**
 
 ```ruby
-is_an_bn("") == true
-is_an_bn("rado") == false
-is_an_bn("aaabb") == false
-is_an_bn("aaabbb") == true
-is_an_bn("aabbaabb") == false
-is_an_bn("bbbaaa") == false
-is_an_bn("aaaaabbbbb") == true
+an_bn?("") == true
+an_bn?("rado") == false
+an_bn?("aaabb") == false
+an_bn?("aaabbb") == true
+an_bn?("aabbaabb") == false
+an_bn?("bbbaaa") == false
+an_bn?("aaaaabbbbb") == true
 ```
 
 ## Credit card validation
 
-Implement a function, called `is_credit_card_valid(number)`, which returns true/false based on the following algorithm:
+Implement a function, called `valid_credit_card?(number)`, which returns true/false based on the following algorithm:
 
 * Each credit card number must contain odd count of digits.
 * We transform the number with the following steps (based on the fact that we start from index 0)
@@ -182,7 +182,7 @@ More examples:
 
 ## Goldbach Conjecture
 
-Implement a function, called `goldbach(n)` which returns a list of tuples, that is the goldbach conjecture for the given number `n`.
+Implement a function, called `goldbach(n)` which returns a list of lists, that is the goldbach conjecture for the given number `n`.
 
 The Goldbach Conjecture states:
 
@@ -203,25 +203,25 @@ For example:
 **Few examples:**
 
 ```ruby
-goldbach(4) == [(2,2)]
-goldbach(6) == [(3,3)]
-goldbach(8) == [(3,5)]
-goldbach(10) == [(3,7), (5,5)]
-goldbach(100) == [(3, 97), (11, 89), (17, 83), (29, 71), (41, 59), (47, 53)]
+goldbach(4) == [[2,2]]
+goldbach(6) == [[3,3]]
+goldbach(8) == [[3,5]]
+goldbach(10) == [[3,7], [5,5]]
+goldbach(100) == [[3, 97], [11, 89], [17, 83], [29, 71], [41, 59], [47, 53]]
 ```
 
 ## Magic Square
 
-Implement a function, called `magic_square(matrix)` that checks if the given array of arrays `matrix` is a magic square.
+Implement a function, called `magic_square?(matrix)` that checks if the given array of arrays `matrix` is a magic square.
 
 A magic square is a square matrix where the numbers in each row, and in each column, and the numbers in the forward and backward main diagonals, all add up to the same number.
 
 
 ```ruby
-magic_square([[1,2,3], [4,5,6], [7,8,9]]) == false
+magic_square?([[1,2,3], [4,5,6], [7,8,9]]) == false
 
-magic_square([[4,9,2], [3,5,7], [8,1,6]]) ==  true
-magic_square([[7,12,1,14], [2,13,8,11], [16,3,10,5], [9,6,15,4]]) ==  true
-magic_square([[23, 28, 21], [22, 24, 26], [27, 20, 25]]) == true
-magic_square([[16, 23, 17], [78, 32, 21], [17, 16, 15]]) == false
+magic_square?([[4,9,2], [3,5,7], [8,1,6]]) ==  true
+magic_square?([[7,12,1,14], [2,13,8,11], [16,3,10,5], [9,6,15,4]]) ==  true
+magic_square?([[23, 28, 21], [22, 24, 26], [27, 20, 25]]) == true
+magic_square?([[16, 23, 17], [78, 32, 21], [17, 16, 15]]) == false
 ```
