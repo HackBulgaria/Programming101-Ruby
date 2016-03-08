@@ -8,7 +8,7 @@ Create an application that fetches tweets from user's Twitter feed (using
 [Twitter's REST API](https://dev.twitter.com/rest/public)) then tries to find
 out which tweets are positive, neutral or negative. Do this processing by a
 plain Ruby class called `TweetStatus`. How would you find out whether a tweet
-is positive from it's content? I dunno, figure it out, lol :troll:.
+is positive from it's content? I dunno, figure it out, lol :trollface:.
 
 ## Requirements
 
