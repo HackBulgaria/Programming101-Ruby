@@ -6,20 +6,20 @@ vibes!
 ## TL;DR
 Create an application that fetches tweets from user's Twitter feed (using
 [Twitter's REST API](https://dev.twitter.com/rest/public)) then tries to find
-out which tweets are positive, neutral or negative. Do this processing by a
-plain Ruby class called `TweetStatus`. How would you find out whether a tweet
-is positive from it's content? I dunno, figure it out, lol :trollface:.
+out which tweets are positive, neutral or negative.
+
+Do this processing by a plain Ruby class called `TweetStatus`. How would you
+find out whether a tweet is positive from it's content? I dunno, figure it out,
+lol :trollface:.
 
 ## Requirements
 
-You obviously need a Twitter account with lots of data in the feed. You'll also
-have to register for the free Semantria service in order to use their
-classification API.
+You obviously need a Twitter account with lots of data in the feed.
 
 ## Restrictions
 
-Make sure you don't use some fancy library wrapping the APIs. We'd like you to
-work directly with the API provided by the service.
+If you feel adventurous, make sure you don't use some fancy library wrapping
+the APIs. We'd like you to work directly with the API provided by the service.
 
 ## Extended
 
