@@ -8,6 +8,10 @@ This course is happening, thanks to:
 
 [![](partners/coderunners.png)](https://code-runners.com/about)
 
+## Hosting Partners
+
+[![SiteGround](partners/SiteGround.png)](https://www.siteground.com/)
+
 ## Problems & Solutions
 
 | Week | Problem | Solution |
